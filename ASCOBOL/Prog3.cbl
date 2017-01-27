@@ -48,5 +48,6 @@
            SPACE CurrentYear.
            DISPLAY "Today is day " YearDay " of the year".
            DISPLAY "The time is " CurrentHour ":" CurrentMinute.
+           DISPLAY "Created by Aaron Navarro".
            STOP RUN.
        END PROGRAM YOUR-PROGRAM-NAME.
