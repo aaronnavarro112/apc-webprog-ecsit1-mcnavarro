@@ -39,7 +39,15 @@ class News_model extends CI_Model {
         $data = array(
             'title' => $this->input->post('title'),
             'slug' => $slug,
-            'text' => $this->input->post('text')
+            'text' => $this->input->post('text'),
+			'Complete Name' => $this->input->post('Complete Name'),
+			'Nickname' => $this->input->post('Nickname'),
+			'Email Address' => $this->input->post('Email Address'),
+			'Home Address' => $this->input->post('Home Address'),
+			'Gender' => $this->input->post('Gender'),
+			'Cellphone Number' => $this->input->post('Cellphone Number'),
+			'Comments' => $this->input->post('Comments')
+			
         );
         
         if ($id == 0) {
