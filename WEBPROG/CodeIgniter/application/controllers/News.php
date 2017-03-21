@@ -41,8 +41,13 @@ class News extends CI_Controller {
  
         $data['title'] = 'Create a news item';
  
-        $this->form_validation->set_rules('title', 'Title', 'required');
-        $this->form_validation->set_rules('text', 'Text', 'required');
+        $this->form_validation->set_rules('Complete Name', 'Complete Name', 'required');
+        $this->form_validation->set_rules('Nickname', 'Nickname', 'required');
+		$this->form_validation->set_rules('Email Address', 'Email Address', 'required');
+		$this->form_validation->set_rules('Home Address', 'Home Address', 'required');
+		$this->form_validation->set_rules('Gender', 'Gender', 'required');
+		$this->form_validation->set_rules('Cellphone Number', 'Cellphone Number', 'required');
+		$this->form_validation->set_rules('Comments', 'Comments', 'required');
  
         if ($this->form_validation->run() === FALSE)
         {
