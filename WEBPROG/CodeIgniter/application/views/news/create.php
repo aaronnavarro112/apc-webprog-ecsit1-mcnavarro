@@ -28,7 +28,7 @@
         </tr>
 		 <tr>
             <td><label for="cellphoneNumber">Cellphone Number</label></td>
-            <td><input type="number" name="cellphoneNumber" size="11"/></td>
+            <td><input type="int" name="cellphoneNumber" size="11"/></td>
         </tr>
 		 <tr>
             <td><label for="comments">Comments</label></td>

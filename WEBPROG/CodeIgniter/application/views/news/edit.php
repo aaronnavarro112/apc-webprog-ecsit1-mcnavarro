@@ -30,7 +30,7 @@
         </tr>
 		 <tr>
             <td><label for="cellphoneNumber">Cellphone Number</label></td>
-            <td><input type="tel" name="cellphoneNumber" size="11" value="<?php echo $news_item['cellphoneNumber'] ?>" /></td>
+            <td><input type="int" name="cellphoneNumber" size="11" value="<?php echo $news_item['cellphoneNumber'] ?>" /></td>
         </tr>
 		 <tr>
             <td><label for="comments">Comments</label></td>
