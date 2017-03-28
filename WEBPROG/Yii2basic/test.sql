@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 28, 2017 at 04:28 AM
+-- Generation Time: Mar 28, 2017 at 05:00 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -48,7 +48,7 @@ CREATE TABLE `trivia` (
   `id` varchar(100) NOT NULL,
   `question` varchar(100) NOT NULL,
   `answer` varchar(100) NOT NULL,
-  `profile-id` int(11) NOT NULL
+  `profile_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -66,7 +66,7 @@ ALTER TABLE `profile`
 --
 ALTER TABLE `trivia`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `profile-id` (`profile-id`);
+  ADD KEY `profile-id` (`profile_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -85,7 +85,7 @@ ALTER TABLE `profile`
 -- Constraints for table `trivia`
 --
 ALTER TABLE `trivia`
-  ADD CONSTRAINT `trivia_ibfk_1` FOREIGN KEY (`profile-id`) REFERENCES `profile` (`id`);
+  ADD CONSTRAINT `trivia_ibfk_1` FOREIGN KEY (`profile_id`) REFERENCES `profile` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
