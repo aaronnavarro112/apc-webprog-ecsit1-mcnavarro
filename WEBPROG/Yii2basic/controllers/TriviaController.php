@@ -46,7 +46,7 @@ class TriviaController extends Controller
 
     /**
      * Displays a single Trivia model.
-     * @param string $id
+     * @param integer $id
      * @return mixed
      */
     public function actionView($id)
@@ -77,7 +77,7 @@ class TriviaController extends Controller
     /**
      * Updates an existing Trivia model.
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param string $id
+     * @param integer $id
      * @return mixed
      */
     public function actionUpdate($id)
@@ -96,7 +96,7 @@ class TriviaController extends Controller
     /**
      * Deletes an existing Trivia model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param string $id
+     * @param integer $id
      * @return mixed
      */
     public function actionDelete($id)
@@ -109,7 +109,7 @@ class TriviaController extends Controller
     /**
      * Finds the Trivia model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param string $id
+     * @param integer $id
      * @return Trivia the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */

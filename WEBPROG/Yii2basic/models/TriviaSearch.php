@@ -18,8 +18,8 @@ class TriviaSearch extends Trivia
     public function rules()
     {
         return [
-            [['id', 'question', 'answer'], 'safe'],
-            [['profile_id'], 'integer'],
+            [['id', 'profile_id'], 'integer'],
+            [['question', 'answer'], 'safe'],
         ];
     }
 
@@ -59,11 +59,11 @@ class TriviaSearch extends Trivia
 
         // grid filtering conditions
         $query->andFilterWhere([
+            'id' => $this->id,
             'profile_id' => $this->profile_id,
         ]);
 
-        $query->andFilterWhere(['like', 'id', $this->id])
-            ->andFilterWhere(['like', 'question', $this->question])
+        $query->andFilterWhere(['like', 'question', $this->question])
             ->andFilterWhere(['like', 'answer', $this->answer]);
 
         return $dataProvider;

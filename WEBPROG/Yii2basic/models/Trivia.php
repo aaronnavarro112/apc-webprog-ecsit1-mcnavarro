@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "trivia".
  *
- * @property string $id
+ * @property integer $id
  * @property string $question
  * @property string $answer
  * @property integer $profile_id
@@ -30,9 +30,9 @@ class Trivia extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'question', 'answer', 'profile_id'], 'required'],
+            [['question', 'answer', 'profile_id'], 'required'],
             [['profile_id'], 'integer'],
-            [['id', 'question', 'answer'], 'string', 'max' => 100],
+            [['question', 'answer'], 'string', 'max' => 100],
             [['profile_id'], 'exist', 'skipOnError' => true, 'targetClass' => Profile::className(), 'targetAttribute' => ['profile_id' => 'id']],
         ];
     }
